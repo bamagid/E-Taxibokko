@@ -9,39 +9,39 @@
 </head>
 <body>
     <div class="form">
-            <form action="" class="form1">
+            <form action="index.php" method="POST" class="form1">
                 <h1>Connexion</h1>
-                <p class="p1">Votre chauffeur en un cilc !</p>
+                <p class="p1">Votre chauffeur en un clic !</p>
                 <button type="submit" class="up">continuer avec Facebook</button><br>
                 <hr class="hr1"><p class="p2">ou</p><hr class="hr2">
                 <label for="email" class="label">EMAIL: </label><br>
-                <input type="email" name="email" class="entrer"> <br>
+                <input type="email" name="email" class="entrer" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}" required> <br>
                 <label for="password" class="label">PASSWORD: </label><br>
-                <input type="password" name="password" class="entrer1"><br>
+                <input type="password" name="password" class="entrer1" required><br>
                 <div class="foot_form">
                     <b><a href="inscription.html">Je n'ai pas de compte</a></b>
                     <button type="submit" class="down">Se connecter</button>
                 </div>
             </form>
-            <form action="" class="form2">
+            <form action="index.php" method="POST" class="form2">
                 <h1 class="h1f2">Bienvenue</h1><br>
                 <p class="p1f2">Finalisez votre inscription en renseignant les informations <br> manquantes</p>
                 <div class="pre_nom">
                    <div class="prenom"> 
                     <label for="prenom" class="lab_pre"> PRENOM:</label><br>
-                    <input type="text" placeholder="Nadia" name="prenom" class="entrerp"><br>
+                    <input type="text" placeholder="Nadia" name="prenom" class="entrerp" pattern="[a-zA-Zàéùè -]{2,50}" required><br>
                    </div>
                    <div class="nom">
                     <label for="nom">NOM:</label><br>
-                    <input type="text" placeholder="Abderahim" name="nom" class="entrern"><br>
+                    <input type="text" placeholder="Abderahim" name="nom" pattern="[a-zA-Z]{2,30}" class="entrern" required><br>
                    </div>
                 </div>
                 <label for="telephone">TELEPHONE:</label><br>
-                <input type="tel" placeholder="75 350 10 30" name="telephone" class="telephone" ><br>
+                <input type="tel" placeholder="75 350 10 30" name="telephone" class="telephone" pattern="^7[05768]{1}+[0-9]{7}$" required><br>
                 <label for="telephone">EMAIL:</label><br>
-                <input type="email" placeholder="example@gmail.com" name="email2" class="entrer"><br>
+                <input type="email" placeholder="example@gmail.com" name="email2" class="entrer" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}" required><br>
                 <label for="telephone">PASSWORD:</label><br>
-                <input type="password" name="passwrd2" class="entrer"><br>
+                <input type="password" name="passwrd2" class="entrer" required><br>
                 <div class="gift">
                     <i class="fa-solid fa-gift"></i>
                     <p class="p2f2"><a href="">Ajouter un code promo</a></p><br>
@@ -55,3 +55,4 @@
     </div>
 </body>
 </html>
+<?php
