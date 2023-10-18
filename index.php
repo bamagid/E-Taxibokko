@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="form">
-            <form action="index.php" method="POST" class="form1">
+     <form action="connexion.php" method="POST" class="form1">
                 <h1>Connexion</h1>
                 <p class="p1">Votre chauffeur en un clic !</p>
                 <button type="submit" class="up">continuer avec Facebook</button><br>
@@ -20,10 +20,10 @@
                 <input type="password" name="password" class="entrer1" required><br>
                 <div class="foot_form">
                     <b><a href="inscription.html">Je n'ai pas de compte</a></b>
-                    <button type="submit" class="down">Se connecter</button>
+                    <button type="submit" name="connect" class="down">Se connecter</button>
                 </div>
             </form>
-            <form action="index.php" method="POST" class="form2">
+            <form action="logout_traitement.php" method="POST" class="form2">
                 <h1 class="h1f2">Bienvenue</h1><br>
                 <p class="p1f2">Finalisez votre inscription en renseignant les informations <br> manquantes</p>
                 <div class="pre_nom">
@@ -41,13 +41,13 @@
                 <label for="telephone">EMAIL:</label><br>
                 <input type="email" placeholder="example@gmail.com" name="email2" class="entrer" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}" required><br>
                 <label for="telephone">PASSWORD:</label><br>
-                <input type="password" name="passwrd2" class="entrer" required><br>
+                <input type="password" name="password2" class="entrer" required><br>
                 <div class="gift">
                     <i class="fa-solid fa-gift"></i>
                     <p class="p2f2"><a href="">Ajouter un code promo</a></p><br>
                 </div>
                 <div class="foot">
-                    <button type="submit">S'inscrire</button><br>
+                    <button type="submit" name="logout">S'inscrire</button><br>
                 </div>
                 <!-- <b><a href="index.html">J'ai déja un compte</a></b> -->
             </form>
@@ -55,4 +55,3 @@
     </div>
 </body>
 </html>
-<?php
