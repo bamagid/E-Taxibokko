@@ -29,17 +29,17 @@
                 <div class="pre_nom">
                    <div class="prenom"> 
                     <label for="prenom" class="lab_pre"> PRENOM:</label><br>
-                    <input type="text" placeholder="Nadia" name="prenom" class="entrerp" autocomplete="off" pattern="[a-zA-Zàéùè -]{2,50}" required><br>
+                    <input type="text" placeholder="Abdoul magid" name="prenom" class="entrerp" autocomplete="off" pattern="[a-zA-Zàéùè -]{2,50}" required><br>
                    </div>
                    <div class="nom">
                     <label for="nom">NOM:</label><br>
-                    <input type="text" placeholder="Abderahim" name="nom" pattern="[a-zA-Z]{2,30}" autocomplete="off" class="entrern" required><br>
+                    <input type="text" placeholder="Ba" name="nom" pattern="[a-zA-Z]{2,30}" autocomplete="off" class="entrern" required><br>
                    </div>
                 </div>
                 <label for="telephone">TELEPHONE:</label><br>
-                <input type="tel" placeholder="75 350 10 30" name="telephone" class="telephone" autocomplete="off" pattern="^7[05768]{1}+[0-9]{7}$" required><br>
+                <input type="tel" placeholder="753501030" name="telephone" class="telephone" autocomplete="off" pattern="^7[05768]{1}+[0-9]{7}$" required><br>
                 <label for="telephone">EMAIL:</label><br>
-                <input type="email" placeholder="example@gmail.com" name="email2" class="entrer" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}" required><br>
+                <input type="email" placeholder="example@gmail.com" name="email2" class="entrer" autocomplete="off" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}" required><br>
                 <label for="telephone">PASSWORD:</label><br>
                 <input type="password" name="password2" class="entrer" required><br>
                 <div class="gift">
